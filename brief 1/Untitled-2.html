@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <h1>Convertisseur De Devises</h1>
+
+    <form>
+
+        <label for="input">Convertir:</label>
+        <input type="number" id="input" name="input" min="0"><br><br>
+        
+        <label>Devise Source:</label>
+        <select name="S" id="DS">
+            <option value="USD" selected>USD</option>
+            <option value="MAD">MAD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select><br><br>
+
+        <label>Devise Cible:</label>
+        <select name="C" id="DC">
+            <option value="USD" selected>USD</option>
+            <option value="MAD">MAD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select><br>
+
+        <input type="button" value="Convertir" onclick="Conversion()"><br>
+
+        <input type="text" id="output" name="output">
+    </form>
+
+    <script src="my_script_2.js"></script>
+
+    <link rel="stylesheet" href="my_style.css">
+</body>
+
+</html>
